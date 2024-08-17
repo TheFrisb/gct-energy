@@ -1,7 +1,16 @@
 {% extends 'theme/base.html' %}
 {% block content %}
     {% include 'theme/widgets/breadcrumb.html' with breadcrumb_text="Our projects" %}
-    {% include 'theme/widgets/projects.html' %}
-    {% include 'theme/widgets/quote.html' %}
-    {% include 'theme/widgets/testimonials.html' %}
+    <div class="container-fluid overflow-hidden my-5 ">
+        <div class="container">
+            <div class="row p-5">
+                <p>GCT’s portfolio is increasing month by month.
+                    We operate with 20+ clients where we have aggregated renewable energy sources that provide reliable
+                    and stable energy supply, with best market prices.
+                    Support their energy transition to renewable energy sources and therefore together we can influence
+                    and contribute to a more eco-friendly and healthy living environment.
+                </p>
+            </div>
+        </div>
+    </div>
 {% endblock content %}
