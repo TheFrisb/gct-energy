@@ -3,23 +3,39 @@ from django.shortcuts import render
 
 # Create your views here.
 def home_view(request):
-    return render(request, "theme/pages/home.html")
+    context = {
+        "title": "GCT Energy"
+    }
+    return render(request, "theme/pages/home.html", context=context)
 
 
 def about_us_view(request):
-    return render(request, "theme/pages/about_us.html")
+    context = {
+        "title": "About Us"
+
+    }
+    return render(request, "theme/pages/about_us.html", context=context)
 
 
 def contact_us_view(request):
-    return render(request, "theme/pages/contact_us.html")
+    context = {
+        "title": "Contact Us"
+    }
+    return render(request, "theme/pages/contact_us.html", context=context)
 
 
 def services_view(request):
-    return render(request, "theme/pages/services.html")
+    context = {
+        "title": "Services"
+    }
+    return render(request, "theme/pages/services.html", context=context)
 
 
 def projects_view(request):
-    return render(request, "theme/pages/projects.html")
+    context = {
+        "title": "Projects"
+    }
+    return render(request, "theme/pages/projects.html", context=context)
 
 # def quote_view(request):
 #     return render(request, "theme/pages/quote.html")
